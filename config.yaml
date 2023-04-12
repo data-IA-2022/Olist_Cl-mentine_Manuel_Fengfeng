@@ -1,0 +1,14 @@
+# ssh:
+# host = olist-g4.francecentral.cloudapp.azure.com
+# port = 5433 
+# username = postgres
+# password = greta2023
+
+olist: postgresql+psycopg2://postgres:greta2023@localhost:5433/olist_g4
+archives : "olist"
+
+# postgres:
+#    url: postgresql+psycopg2://postgres@localhost/olist_g4
+
+olist_writer: postgresql+psycopg2://writer:WRITER@localhost:5433/olist_g4
+
